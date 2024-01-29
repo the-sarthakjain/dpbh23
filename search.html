@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Search{% endblock title %}
+{% block body %}
+    {% for result in results %}
+    <tr>
+        <td>{{result.title}}</td>
+        <td>{{result.desc}}</td>
+    </tr>
+        
+    {% endfor %}
+    
+{% endblock body %}
